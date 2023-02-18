@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <?php if (isset($error)) { ?>
+        <p style="color: red;"><?php echo $error; ?></p>
+    <?php } ?>
+    <form method="post">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" name="login" value="Iniciar sesión">
+    </form>
+</body>
+</html>
